@@ -6,18 +6,18 @@ import { ExternalLink, Github, Star } from 'lucide-react'
 export default function Projects() {
   const projects = [
     {
+      title: 'KineticXhub - Digital Marketing & Automation',
+      description: 'A comprehensive digital marketing agency platform specializing in ads management, marketing automation, and business growth solutions. Empowering businesses with data-driven strategies and cutting-edge automation tools.',
+      tech: ['Next.js', 'TypeScript', 'Marketing Automation', 'Analytics', 'SEO'],
+      github: '#',
+      demo: 'https://kineticxhub.com',
+      featured: true,
+    },
+    {
       title: 'TeleCRM - AI-Powered CRM System',
       description: 'A comprehensive SaaS-ready CRM system with AI capabilities for managing customer relationships, call tracking, and business analytics.',
       tech: ['TypeScript', 'React', 'Node.js', 'MongoDB', 'AI/ML'],
       github: 'https://github.com/arsalan507/telecrm',
-      demo: '#',
-      featured: true,
-    },
-    {
-      title: 'TeleCRM Android App',
-      description: 'Smart call logging and CRM system for Android devices. Features automated call tracking, contact management, and CRM integration.',
-      tech: ['Java', 'Android SDK', 'SQLite', 'REST API'],
-      github: 'https://github.com/arsalan507/callTrackerPro-android',
       demo: '#',
       featured: true,
     },

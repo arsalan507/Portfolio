@@ -50,18 +50,20 @@ export default function About() {
           >
             <h3 className="text-3xl font-bold mb-6">Who I Am</h3>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
-              I'm a passionate Full Stack Developer based in Bengaluru, India, with a focus on creating
-              innovative and user-friendly web applications. I specialize in JavaScript technologies,
-              including React, Next.js, Node.js, and TypeScript.
+              I'm a passionate Full Stack Developer and Digital Marketing Specialist based in Bengaluru, India.
+              As the founder of <span className="font-semibold text-blue-600 dark:text-blue-400">KineticXhub</span>,
+              a digital marketing and automation agency, I help businesses grow through data-driven strategies
+              and cutting-edge technology.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
-              My journey in web development has led me to work on various projects ranging from
-              simple calculators to complex CRM systems. I'm particularly interested in building
-              scalable SaaS applications and exploring new technologies.
+              I specialize in JavaScript technologies including React, Next.js, Node.js, and TypeScript,
+              while also leveraging my expertise in marketing automation, SEO, and ads management.
+              My journey spans from building complex CRM systems to creating innovative marketing solutions
+              that drive real business results.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              When I'm not coding, I enjoy contributing to open-source projects, learning about
-              new frameworks, and sharing knowledge with the developer community.
+              When I'm not coding or strategizing marketing campaigns, I enjoy contributing to open-source
+              projects, exploring new technologies, and sharing knowledge with the developer community.
             </p>
           </motion.div>
 

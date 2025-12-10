@@ -2,6 +2,7 @@
 
 import { Github, Linkedin, Instagram, Twitter, Mail, Download } from 'lucide-react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Hero() {
   const socialLinks = [
@@ -17,9 +18,26 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="mb-8 flex justify-center"
+          >
+            <div className="relative w-48 h-48 md:w-56 md:h-56">
+              <Image
+                src="/profile.jpg"
+                alt="Arsalan Ahmed"
+                fill
+                className="rounded-full object-cover border-4 border-blue-600 shadow-2xl"
+                priority
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6">
               Hi, I'm{' '}
@@ -32,14 +50,14 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
           >
             <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 dark:text-gray-400 mb-4">
-              Full Stack Developer
+              Full Stack Developer & Digital Marketing Specialist
             </p>
             <p className="text-lg sm:text-xl text-gray-500 dark:text-gray-500 mb-8 max-w-2xl mx-auto">
-              Building innovative web applications with modern technologies.
-              Passionate about creating seamless user experiences and scalable solutions.
+              Founder of KineticXhub | Building innovative web applications and driving business growth
+              through data-driven marketing strategies and automation.
             </p>
           </motion.div>
 
