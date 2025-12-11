@@ -50,7 +50,7 @@ export default function Projects() {
       description: 'A beautiful and intuitive Quran reading application with search functionality and bookmarking features.',
       tech: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
       github: 'https://github.com/arsalan507/simplequran',
-      demo: '#',
+      demo: 'https://simplequran.in/',
       featured: false,
     },
   ]
