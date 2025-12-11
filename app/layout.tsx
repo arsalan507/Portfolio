@@ -33,15 +33,29 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              html {
+                color-scheme: dark;
+              }
+            `,
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              try {
-                const theme = localStorage.getItem('theme') || 'dark';
-                if (theme === 'dark') {
+              (function() {
+                try {
+                  const theme = localStorage.getItem('theme');
+                  if (!theme || theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                  }
+                } catch (e) {
                   document.documentElement.classList.add('dark');
                 }
-              } catch (e) {}
+              })();
             `,
           }}
         />
