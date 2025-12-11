@@ -13,7 +13,7 @@ Your modern portfolio website is now live and accessible worldwide.
 
 ### Alternative URLs:
 - https://arsalan507-kineticxhubs-projects.vercel.app
-- https://arsalan507-2zovy51yb-kineticxhubs-projects.vercel.app
+- https://arsalan507-j8kxpqoys-kineticxhubs-projects.vercel.app
 
 ---
 
@@ -23,10 +23,11 @@ Your modern portfolio website is now live and accessible worldwide.
 |----------|-------|
 | **Project Name** | arsalan507 |
 | **Status** | ● Ready (Production) |
-| **Deployment ID** | dpl_B61fh2hS3sitFVna9GAkmCiDD4Z8 |
-| **Build Time** | ~33 seconds |
+| **Latest Deployment** | dpl_7P4rr469qLyL8iFKS4mLvDTiJEFi |
+| **Build Time** | ~24 seconds |
 | **Framework** | Next.js 14 |
 | **Region** | Global (CDN) |
+| **Last Updated** | Dark mode fixes deployed |
 
 ---
 
