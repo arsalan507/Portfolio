@@ -14,43 +14,59 @@ export default function Projects() {
       featured: true,
     },
     {
-      title: 'TeleCRM - AI-Powered CRM System',
-      description: 'A comprehensive SaaS-ready CRM system with AI capabilities for managing customer relationships, call tracking, and business analytics.',
-      tech: ['TypeScript', 'React', 'Node.js', 'MongoDB', 'AI/ML'],
-      github: 'https://github.com/arsalan507/telecrm',
-      demo: '#',
+      title: 'SimpleQuran - Islamic Web Application',
+      description: 'A beautiful and intuitive Quran reading web application featuring complete Quran text, advanced search functionality, bookmarking system, and audio recitations. Built for seamless spiritual experience.',
+      tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+      github: 'https://github.com/arsalan507/simplequran',
+      demo: 'https://simplequran.in/',
       featured: true,
     },
     {
+      title: 'FIXplanet - CRM & Service Platform',
+      description: 'A comprehensive CRM solution for service management businesses. Features customer tracking, service scheduling, invoice management, and analytics dashboard for streamlined operations.',
+      tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Material-UI'],
+      github: '#',
+      demo: 'https://crm-fixplanet.vercel.app',
+      featured: false,
+    },
+    {
+      title: 'Sky Crew Aviation - Landing Page',
+      description: 'Professional landing page for an aviation training academy. Features course information, enrollment system, and modern UI showcasing flight training programs and certification courses.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'],
+      github: '#',
+      demo: 'https://skycrewaviation.vercel.app',
+      featured: false,
+    },
+    {
+      title: '2XG - Business Website',
+      description: 'Modern corporate website for a business solutions company. Features service showcase, client portfolio, contact forms, and responsive design for optimal user experience.',
+      tech: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion'],
+      github: '#',
+      demo: 'https://2xg.vercel.app',
+      featured: false,
+    },
+    {
+      title: 'The Cinema Hub',
+      description: 'Entertainment platform for movie enthusiasts. Features movie listings, reviews, ratings, and trailers. Built with modern web technologies for smooth browsing experience.',
+      tech: ['React', 'Next.js', 'TypeScript', 'Movie API', 'Tailwind CSS'],
+      github: '#',
+      demo: 'https://thecinemahub.vercel.app',
+      featured: false,
+    },
+    {
+      title: 'TeleCRM - AI-Powered CRM System',
+      description: 'A comprehensive SaaS-ready CRM system with AI capabilities for managing customer relationships, call tracking, and business analytics. Features automated workflows and intelligent insights.',
+      tech: ['TypeScript', 'React', 'Node.js', 'MongoDB', 'AI/ML'],
+      github: 'https://github.com/arsalan507/telecrm',
+      demo: '#',
+      featured: false,
+    },
+    {
       title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with Next.js and TypeScript, featuring dark mode and smooth animations.',
+      description: 'A modern, responsive portfolio website built with Next.js and TypeScript, featuring dark mode, smooth animations, and interactive UI components.',
       tech: ['TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
-      github: 'https://github.com/arsalan507/arsalan507.github.io',
-      demo: 'https://arsalan507.github.io',
-      featured: false,
-    },
-    {
-      title: 'Airbnb Clone',
-      description: 'A full-featured Airbnb clone with property listings, booking system, and user authentication.',
-      tech: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB'],
-      github: 'https://github.com/arsalan507/airbnb-clone',
-      demo: '#',
-      featured: false,
-    },
-    {
-      title: 'Inventory Management App',
-      description: 'A comprehensive inventory management system for tracking products, stock levels, and generating reports.',
-      tech: ['TypeScript', 'React', 'Node.js', 'PostgreSQL'],
-      github: 'https://github.com/arsalan507/InventoryManagementApp',
-      demo: '#',
-      featured: false,
-    },
-    {
-      title: 'Simple Quran App',
-      description: 'A beautiful and intuitive Quran reading application with search functionality and bookmarking features.',
-      tech: ['TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
-      github: 'https://github.com/arsalan507/simplequran',
-      demo: 'https://simplequran.in/',
+      github: 'https://github.com/arsalan507/Portfolio',
+      demo: 'https://arsalan507.vercel.app',
       featured: false,
     },
   ]
@@ -68,7 +84,7 @@ export default function Projects() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and experience
+            Showcasing my work across digital marketing, web applications, and business solutions
           </p>
         </motion.div>
 
@@ -108,15 +124,17 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                  >
-                    <Github className="w-5 h-5" />
-                    <span>Code</span>
-                  </a>
+                  {project.github !== '#' && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      <Github className="w-5 h-5" />
+                      <span>Code</span>
+                    </a>
+                  )}
                   {project.demo !== '#' && (
                     <a
                       href={project.demo}
